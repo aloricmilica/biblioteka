@@ -24,6 +24,7 @@ public class Knjiga {
 		result = prime * result + (int) (ISBN ^ (ISBN >>> 32));
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -37,6 +38,7 @@ public class Knjiga {
 			return false;
 		return true;
 	}
+	
 	public LinkedList<Autor> getAutori() {
 		return autori;
 	}
